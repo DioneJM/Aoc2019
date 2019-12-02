@@ -32,9 +32,6 @@ solvePart1 program = result `Seq.index` 0
 targetValue :: Int
 targetValue = 19690720
 
-findIdealTargetValues :: Seq Int -> [Int] -> [Int] -> Int -> (Int, Int)
-findIdealTargetValues program nounValues verbValues targetValue = (1,2)
-
 solvePart2 :: Seq Int -> Int -> Int
 solvePart2 program target =  head [ 100 * noun + verb |
     noun <- [1..99],
